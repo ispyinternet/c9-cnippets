@@ -25,7 +25,7 @@ define("plugins/my.snippets/__static__",[], function(require, exports, module) {
                 {
                     "type": "snippets",
                     "filename": "javascript.snippets",
-                    "data": "# scope: javascript\n\n\n# class method snippet\nsnippet meth\n\t\t/*-------------------------------------------------------------------------\n\t\t* ${1}\n\t\t*------------------------------------------------------------------------*/\n\t\t${2}(${3}) {\n\n\t\t\t${0}\n\t\t}\n"
+                    "data": "# scope: javascript\n\n# class method snippet\nsnippet meth\n\t/*-------------------------------------------------------------------------\n\t* ${1}\n\t*------------------------------------------------------------------------*/\n\t${2}(${3}) {\n\n\t\t${0}\n\t}\n"
                 }
             ].forEach(function(x) {
                 debug.addStaticPlugin(x.type, "my.snippets", x.filename, x.data, plugin);
